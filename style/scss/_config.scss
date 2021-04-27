@@ -1,0 +1,71 @@
+@mixin flex($dir) {
+    display: flex;
+    flex-direction: $dir;
+}
+
+.config {
+    width: 100%;
+    margin-top: 50px;
+    @include flex(row);
+    justify-content: center;
+    flex-wrap: wrap;
+
+    & div {    
+        @include flex(row);
+        margin-top: 10px;
+    }
+
+    .buttons {
+        @include flex(column);
+        justify-content: center;
+        margin-top: -20px;
+
+        & button {
+            margin: 10px;
+            @include flex(column);
+            justify-content: center;
+            align-items: center;
+            width: 30px;
+            height: 30px;
+            background-color: lighten($color: #3C4262, $amount: 5);
+            border: none;
+            border-radius: 100%;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten($color: #3C4262, $amount: 10);
+            }
+
+            & > img {
+                width: 20px;
+            }
+        }
+    }
+
+    .info {
+        @include flex(column);
+        text-align: center;
+
+        & small:nth-child(1) {
+            width: 200px;
+            height: 130px;
+            @include flex(column);
+            justify-content: center;
+            font-size: 5rem;
+            font-weight: 700;
+            color: #f8f8f2;
+            margin-right: 70px;
+            border-radius: 6px;
+            background-color: #3C4262;
+            box-shadow: 0 4px 0 1px darken($color: #333853, $amount: 5);
+        }
+        & small:nth-child(2) {
+            width: 200px;
+            margin-top: 10px;
+            font-size: 1.3rem;
+            font-weight: 500;
+            color: #f8f8f2;
+            text-align: center;
+        }
+    }
+}

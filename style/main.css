@@ -1,0 +1,196 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  background-color: #333853;
+}
+
+a {
+  color: #f8f8f2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/*imports*/
+.title {
+  width: 100%;
+  text-align: center;
+  margin-top: 9%;
+}
+
+.title > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #f8f8f2;
+}
+
+.config {
+  width: 100%;
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.config div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 10px;
+}
+
+.config .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -20px;
+}
+
+.config .buttons button {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #464d72;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.config .buttons button:hover {
+  background-color: #4f5782;
+}
+
+.config .buttons button > img {
+  width: 20px;
+}
+
+.config .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+.config .info small:nth-child(1) {
+  width: 200px;
+  height: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #f8f8f2;
+  margin-right: 70px;
+  border-radius: 6px;
+  background-color: #3C4262;
+  -webkit-box-shadow: 0 4px 0 1px #292d43;
+          box-shadow: 0 4px 0 1px #292d43;
+}
+
+.config .info small:nth-child(2) {
+  width: 200px;
+  margin-top: 10px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #f8f8f2;
+  text-align: center;
+}
+
+.continue {
+  width: 100%;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.continue > button {
+  width: 200px;
+  height: 60px;
+  background-color: #3C4262;
+  color: #f8f8f2;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 4px 0 1px #292d43;
+          box-shadow: 0 4px 0 1px #292d43;
+  margin-bottom: 90px;
+  cursor: pointer;
+}
+
+.continue > button:hover {
+  background-color: #464d73;
+}
+
+.footer {
+  width: 100%;
+  position: fixed;
+  bottom: 3px;
+  text-align: center;
+}
+
+.footer > small {
+  color: #f8f8f2;
+  font-size: 1rem;
+  font-weight: 300;
+}
+/*# sourceMappingURL=main.css.map */

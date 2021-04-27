@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pomodoro</title>
+        <link rel="stylesheet" href="./style/main.css">
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="title">
+            <h1>Pomodoro</h1>
+        </div>
+
+
+        <main>
+            <section class="config">
+                <div>
+                    <div class="buttons">
+                        <button type="button" onclick="arrows('up', 'work')"><img src="./assets/arrowUp.svg" alt="Up"/></button>
+                        <button type="button" onclick="arrows('down', 'work')"><img src="./assets/arrowDown.svg" alt="Down"/></button>
+                    </div>
+                    <span class="info">
+                        <small id="work">25</small>
+                        <small>Trabalho</small>
+                    </span>
+                </div>
+                <div>
+                    <div class="buttons">
+                        <button type="button" onclick="arrows('up', 'stop')"><img src="./assets/arrowUp.svg" alt="Up"/></button>
+                        <button type="button" onclick="arrows('down', 'stop')"><img src="./assets/arrowDown.svg" alt="Down"/></button>
+                    </div>
+                    <span class="info">
+                        <small id="stop">5</small>
+                        <small>Pausa</small>
+                    </span>
+                </div>
+                <div>
+                    <div class="buttons">
+                        <button type="button" onclick="arrows('up', 'session')"><img src="./assets/arrowUp.svg" alt="Up"/></button>
+                        <button type="button" onclick="arrows('down', 'session')"><img src="./assets/arrowDown.svg" alt="Down"/></button>
+                    </div>
+                    <span class="info">
+                        <small id="session">3</small>
+                        <small>Sessões</small>
+                    </span>
+                </div>
+            </section>
+            <div class="continue">
+                <button type="button" onclick="save()">Continuar</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <small>Feito com 🧡 por <a href="https://github.com/mr-soulfox" target="_blank">Marcos Paulo</a>-2021</small>
+        </footer>
+
+        <script src="./js/arrows.js"></script>
+        <script src="./js/config.js"></script>
+    </body>
+</html>

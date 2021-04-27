@@ -1,0 +1,25 @@
+.continue {
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    & > button {
+        width: 200px;
+        height: 60px;
+        background-color: #3C4262;
+        color: #f8f8f2;
+        font-size: 2rem;
+        font-weight: 600;
+        border: none;
+        border-radius: 3px;
+        box-shadow: 0 4px 0 1px darken($color: #333853, $amount: 5);
+        margin-bottom: 90px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: lighten($color: #333853, $amount: 10);
+        }
+    }
+}

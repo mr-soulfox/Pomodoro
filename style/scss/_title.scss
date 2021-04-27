@@ -1,0 +1,11 @@
+.title {
+    width: 100%;
+    text-align: center;
+    margin-top: 9%;
+
+    & > h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        color: #f8f8f2;
+    }
+}

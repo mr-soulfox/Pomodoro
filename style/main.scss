@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: #333853;
+}
+
+a {
+    color: #f8f8f2;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+/*imports*/
+@import "./scss/title";
+@import "./scss/config";
+@import "./scss/continue";
+@import "./scss/footer";
