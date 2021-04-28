@@ -22,11 +22,11 @@ function arrows(dir, type) {
     }
 
     //Max and min value to sessions
-    if (type == 'session' && numValue > 2 && numValue < 30) {
+    if (type == 'session' && numValue > 2 && numValue < 10) {
         value = dir == 'up' ? 1 : -1
     } else if (numValue == 2) {
         value = 1
-    } else if (numValue == 30 && type == "session") {
+    } else if (numValue == 10 && type == "session") {
         value = -1
     }
 

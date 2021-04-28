@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro | Start</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body onload="verify()" onbeforeunload="saveProgress()">
+    <header>
+        <section class="header">
+            <div>
+                <h1>Pomodoro</h1>
+            </div>
+            <div>
+                <button type="button" id="return" class="return" onclick="saveProgress(); window.location.replace('index.html')">Início</button>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="main">
+            <div class="timerContainer">
+                <div id="border">
+                    <span id="min"></span>:<span id="sec"></span><!--Time modified at JS--> 
+                </div>
+            </div>
+            <div>
+                <section>
+                    <div class="containerSessions" id="session">
+                        <!--Session name added at JS--> Trabalho
+                        <span class="containerPoints" id="points">
+                            <!--Sessions points added at JS--> 
+                        </span>
+                    </div>
+                    <div class="containerStartButton">
+                        <button type="button" onclick="play()"><img src="./assets/play.svg" alt="Play" id="imgButton"></button>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <small>Feito com 🧡 por <a href="https://github.com/mr-soulfox" target="_blank">Marcos Paulo</a>-2021</small>
+    </footer>
+
+    <script src="./js/pomodoro/load.js"></script>
+    <script src="./js/pomodoro/play.js"></script>
+</body>
+</html>

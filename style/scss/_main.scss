@@ -1,0 +1,85 @@
+@mixin flex($dir, $align, $justify) {
+    display: flex;
+    flex-direction: $dir;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+.main {
+    width: 100%;
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    
+    .timerContainer {
+        @include flex(column, center, center);
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        color: #f8f8f2;
+        background-color: #3C4262;
+        margin: 30px;
+        
+        & > div {
+            @include flex(row, center, center);
+            width: 75%;
+            height: 75%;
+            border-radius: 50%;
+            border: 6px solid #f8f8f2;
+            font-size: 3.5rem;
+            font-weight: 700;
+
+            & > span {
+                font-size: 3.9rem;
+                font-weight: 900;
+            }
+        }
+    }
+
+    .containerSessions {
+        width: 130px;
+        @include flex(column, center, center);
+        flex-wrap: wrap;
+        font-size: 3rem;
+        font-weight: 600;
+        color: #f8f8f2;
+
+        .containerPoints {
+            margin-bottom: 30px;
+
+            & small {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                border-radius: 50%;
+                border: 1px solid #3C4262;
+                background-color: #3C4262;
+            }
+        }
+    }
+
+    .containerStartButton {
+        width: 200px;
+        @include flex(column, center, center);
+
+        & > button {
+            width: 60px;
+            height: 60px;
+            background-color: #3C4262;
+            border: none;
+            border-radius: 9px;
+            box-shadow: 0 4px 0 1px darken($color: #333853, $amount: 5);
+            margin-bottom: 90px;
+            cursor: pointer;
+            @include flex(column, center, center);
+
+            &:hover {
+                background-color: lighten($color: #333853, $amount: 10);
+            }
+
+            & > img {
+                width: 45px;
+                height: 45px;
+            }
+        }
+    }
+}

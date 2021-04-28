@@ -17,8 +17,12 @@ a {
     font-weight: 600;
 }
 
-/*imports*/
+/*imports to index.html*/
 @import "./scss/title";
 @import "./scss/config";
 @import "./scss/continue";
 @import "./scss/footer";
+
+/*imports to chronometer.html*/
+@import "./scss/header";
+@import "./scss/main";

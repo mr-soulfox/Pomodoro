@@ -1,4 +1,4 @@
-let userStorage = window.localStorage
+const userStorage = window.localStorage
 
 function save() {
     let work = document.getElementById('work')
@@ -11,4 +11,6 @@ function save() {
     for (let i = 0; i <= values.length - 1; i++) {
         userStorage.setItem(values[i][0], values[i][1])
     }
+
+    window.location.replace('chronometer.html')
 }
