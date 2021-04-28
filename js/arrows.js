@@ -4,9 +4,9 @@ function arrows(dir, type) {
     let value = 0
 
     //Max and min value to work
-    if (type == 'work' && numValue > 5 && numValue < 59) {
+    if (type == 'work' && numValue > 10 && numValue < 59) {
         value = dir == 'up' ? 1 : -1
-    } else if (numValue == 5) {
+    } else if (numValue == 10) {
         value = 1
     } else if (numValue == 59) {
         value = -1
