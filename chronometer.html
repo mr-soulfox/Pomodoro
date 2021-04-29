@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 </head>
-<body onload="verify()" onbeforeunload="saveProgress()">
+<body onload="verify(), restart()">
     <header>
         <section class="header">
             <div>
@@ -30,15 +30,18 @@
                 </div>
             </div>
             <div>
-                <section>
-                    <div class="containerSessions" id="session">
-                        <!--Session name added at JS--> Trabalho
+                <section class="containerSessions">
+                    <div class="containerSessions">
+                        <span id="session">
+                            <!--Session name added at JS-->
+                        </span>
+                        
                         <span class="containerPoints" id="points">
                             <!--Sessions points added at JS--> 
                         </span>
                     </div>
                     <div class="containerStartButton">
-                        <button type="button" onclick="play()"><img src="./assets/play.svg" alt="Play" id="imgButton"></button>
+                        <button type="button" onclick="play()" id="play"><img src="./assets/play.svg" alt="Play" id="imgButton"></button>
                     </div>
                 </section>
             </div>

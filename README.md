@@ -4,7 +4,6 @@
 </div>
 
 <p style="font-size: 1.3rem; font-weight: 500;">Desafio da devChallenge, criar um cronômetro que utiliza a técnico do pomodoro para ajudar na gestão de tempo! O modelo está disponível na pasta "design"</p>
-<h4 align="center" style="font-size: 1.5rem; font-weight: 700;">👷 Projeto em construção 👷</h4>
 
 <br/>
 

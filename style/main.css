@@ -311,7 +311,7 @@ a {
 }
 
 .main .containerSessions {
-  width: 130px;
+  width: 140px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -327,7 +327,10 @@ a {
           justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  font-size: 3rem;
+}
+
+.main .containerSessions > #session {
+  font-size: 2rem;
   font-weight: 600;
   color: #f8f8f2;
 }
@@ -338,6 +341,7 @@ a {
 
 .main .containerSessions .containerPoints small {
   display: inline-block;
+  margin: 4px;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -346,7 +350,7 @@ a {
 }
 
 .main .containerStartButton {
-  width: 200px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -363,7 +367,7 @@ a {
 }
 
 .main .containerStartButton > button {
-  width: 60px;
+  width: 70px;
   height: 60px;
   background-color: #3C4262;
   border: none;
@@ -392,7 +396,7 @@ a {
 }
 
 .main .containerStartButton > button > img {
-  width: 45px;
-  height: 45px;
+  width: 30px;
+  height: 30px;
 }
 /*# sourceMappingURL=main.css.map */

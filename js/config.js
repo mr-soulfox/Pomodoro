@@ -12,5 +12,24 @@ function save() {
         userStorage.setItem(values[i][0], values[i][1])
     }
 
+    
+    let types = ['work', 'stop']
+    let sessionType = []
+    let initialSessionType = session.textContent % 2
+
+    //define sessionType
+    for (let i = 0; i < Number(session.textContent); i++) {
+        sessionType.push(types[initialSessionType])
+        
+        if (initialSessionType == 1) {
+            initialSessionType = 0
+        } else {
+            initialSessionType++
+        }
+    }
+    
+    //save sessionTypes
+    userStorage.setItem('types', sessionType)
+
     window.location.replace('chronometer.html')
 }
